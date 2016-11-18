@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/addresslist/addresslist.iml" filepath="$PROJECT_DIR$/addresslist/addresslist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidhousekeeper/androidhousekeeper.iml" filepath="$PROJECT_DIR$/androidhousekeeper/androidhousekeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dialogmodule/dialogmodule.iml" filepath="$PROJECT_DIR$/dialogmodule/dialogmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/handlerdemo/handlerdemo.iml" filepath="$PROJECT_DIR$/handlerdemo/handlerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/housekeeper/housekeeper.iml" filepath="$PROJECT_DIR$/housekeeper/housekeeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myandroid/myandroid.iml" filepath="$PROJECT_DIR$/myandroid/myandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timer/timer.iml" filepath="$PROJECT_DIR$/timer/timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timers/timers.iml" filepath="$PROJECT_DIR$/timers/timers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tmimer/tmimer.iml" filepath="$PROJECT_DIR$/tmimer/tmimer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" filepath="$PROJECT_DIR$/viewpagerdemo/viewpagerdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhang/zhang.iml" filepath="$PROJECT_DIR$/zhang/zhang.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="F:\Androidstudio\Android\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/addresslist" />
+            <option value="$PROJECT_DIR$/androidhousekeeper" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/dialogmodule" />
+            <option value="$PROJECT_DIR$/handlerdemo" />
+            <option value="$PROJECT_DIR$/housekeeper" />
+            <option value="$PROJECT_DIR$/myandroid" />
+            <option value="$PROJECT_DIR$/timer" />
+            <option value="$PROJECT_DIR$/timers" />
+            <option value="$PROJECT_DIR$/tmimer" />
+            <option value="$PROJECT_DIR$/viewpagerdemo" />
+            <option value="$PROJECT_DIR$/zhang" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

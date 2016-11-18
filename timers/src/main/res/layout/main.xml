@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:text="重新开始"
+        android:id="@+id/textView2" />
+
+
+    <ImageButton
+
+        android:id="@+id/btnStop"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_toRightOf="@+id/textView2"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:text="@string/init_time_100millisecond"
+        android:id="@+id/tvTime"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:text="开始 暂停计时"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnStop"
+        android:layout_toEndOf="@+id/btnStop" />
+
+    <ImageButton
+
+        android:id="@+id/btnStartPaunse"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+</RelativeLayout>

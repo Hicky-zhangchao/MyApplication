@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_all"
+        style="@style/app_listitem" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+        <TextView
+            style="@style/app_listitem_text"
+            android:text="@string/filetype_all" />
+        <TextView
+            android:id="@+id/file_all_size"
+            style="@style/app_listitem_text_small"
+            android:text="(计算中...)" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/file_all_loading"
+        style="@style/app_listitem_righticon_loading"
+        android:visibility="visible" />
+        <ImageView
+            android:id="@+id/file_all_righticon"
+            style="@style/app_listitem_righticon"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <View style="@style/line_h_transparent" />
+    <!-- 同上 -->
+    <!-- 文档 -->
+    <!-- 视频 -->
+    <!-- 音频 -->
+    <!-- 图像 -->
+    <!-- 压缩包 -->
+    <!-- 程序包 -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <include layout="@layout/layout_filemgr_list" />
+    </ScrollView>
+</LinearLayout>

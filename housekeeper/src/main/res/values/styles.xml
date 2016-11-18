@@ -1,0 +1,149 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <!-- Customize your theme here. -->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+    <!--   <style name="tel_showtext">
+           <item name="android:background">#FF009ACD</item>
+           <item name="android:gravity">center</item>
+           <item name="android:text">@string/tel_title</item>
+           <item name="android:textColor">@color/white</item>
+           <item name="android:textSize">@dimen/tel_show_textsize</item>
+           <item name="android:textStyle">bold</item>  -->
+
+    <style name="homeitem">
+
+        <item name="android:contentDescription">
+            Style
+        </item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/home_entry_item</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/home_item_textsize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">hitHomeitem</item>
+
+        <style name="setting_item">
+            <item name="android:contentDescription">设置页面每个 item的Style</item>
+            <item name="android:clickable">true</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/set_item_height</item>
+            <item name="android:background">@drawable/home_entry_item</item>
+            <item name="android:onClick">hitSettingitem</item>
+        </style>
+    </style>
+
+    <resources>
+        <dimen name="set_item_titlesize">16.0sp</dimen>
+        <dimen name="set_item_textsize">12.0sp</dimen>
+        <dimen name="set_item_height">60dp</dimen>
+    </resources>
+    <RelativeLayout style="@style/setting_item" android:id="@+id/rl_setting_autostart">
+
+        <TextView style="@style/setting_item_head" android:text="@string/setting_autostart" />
+
+        <ToggleButton style="@style/setting_item_head_icon_toggle" android:id="@+id/tb_toggle_reboot" />
+    </RelativeLayout>
+
+    <string name="setting_autostart"> 开机启动 </string>
+    <string name="setting_pushmsg"> 消息推送 </string>
+    <string name="setting_notifmsg"> 通知图标 </string>
+    <string name="setting_clear"> 清理缓冲 </string>
+    <string name="setting_update"> 版本更新 </string>
+    <string name="setting_help"> 帮助说明 </string>
+    <string name="setting_study"> 意见反溃 </string>
+    <string name="setting_share"> 好友分享 </string>
+    <string name="setting_about"> 关于我们 </string>
+    <string name="title_activity_speedup">SpeedupActivity</string>
+
+    <!-- 软件各页面中列表项右侧图标 -->
+    <style name="app_listitem_righticon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_arrows_right</item>
+        <item name="android:layout_marginRight">@dimen/app_listitem_horizontal_margin</item>
+    </style>
+    <!-- 软件各页面中列表项风格(软件管理? 文件管理?) -->
+    <style name="app_listitem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/app_listitem_height</item>
+        <item name="android:background">@drawable/home_entry_item</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">hitListitem</item>
+    </style>
+    <!-- soft -->
+    <string name="space_all"> 所有空间 </string>
+    <string name="space_phone"> 手机内置空间 </string>
+    <string name="space_sdcard"> 外置存储空间 </string>
+    <string name="allsoft"> 所有软件 </string>
+    <string name="syssoft"> 系统软件 </string>
+    <string name="usesoft"> 用户软件 </string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <!-- show app -->
+    <string name="showapp_delapp"> 卸载所选软件 </string>
+    <string name="showfile_delfile"> 删除所选文件 </string>
+    <!-- 饼形图 -->
+    <style name="soft_piechar">
+        <item
+            name="android:layout_width">@dimen/softmgr_piechar_width</item>
+        <item
+            name="android:layout_height">@dimen/softmgr_piechar_height</item>
+    </style>
+    <!-- 饼形图 icon -->
+    <style name="soft_piechar_icon">
+        <item
+            name="android:layout_width">@dimen/softmgr_piechar_icon_width</item>
+        <item
+            name="android:layout_height">@dimen/softmgr_piechar_icon_width</item
+            >
+    </style>
+    <style name="line_v_transparent">
+    <item name="android:background">#00FFFFFF</item>
+    <item name="android:layout_width">1dip</item>
+    <item name="android:layout_height">fill_parent</item>
+</style>
+
+    <style name="app_listitem_text">100dp</style>
+
+    <RelativeLayout
+        android:id="@+id/file_classlist_all"
+        style="@style/app_listitem" >
+    <!-- 左侧文本 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" >
+    <TextView
+        style="@style/app_listitem_text"
+        android:text="@string/filetype_all" />
+    <TextView
+        android:id="@+id/file_all_size"
+        style="@style/app_listitem_text_small"
+        android:text="(计算中...)" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/file_all_loading"
+        style="@style/app_listitem_righticon_loading"
+        android:visibility="visible" />
+    <ImageView
+        android:id="@+id/file_all_righticon"
+        style="@style/app_listitem_righticon"
+        android:visibility="gone" />
+    </RelativeLayout>
+</resources>

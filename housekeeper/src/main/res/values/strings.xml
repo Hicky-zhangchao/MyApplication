@@ -1,0 +1,40 @@
+<resources>
+    <!-- Lead 页面 -->
+    <string name="app_name">通讯大全</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tel_title">一站式号码服务平台</string>
+    <string name="lead_skiptext">skip</string>
+    <string name="leadimage_description">Guide page image</string>
+    <string name="leadtext_description1">Small icon 1</string>
+    <string name="leadtext_description2">Small icon 2</string>
+    <string name="leadtext_description3">Small icon 1</string>
+    <string name="about"> 关于我们 </string>
+    <string name="setting"> 设置 </string>
+    <string name="rocket"> 手机加速 </string>
+    <string name="softmgr"> 软件管理 </string>
+    <string name="phonemgr"> 手机检测 </string>
+    <string name="telmgr"> 通讯大全 </string>
+    <string name="filemgr"> 文件管理 </string>
+    <string name="sdclean"> 垃圾清理 </string>
+    <string name="speedup_show_sysapp">显示系统进程</string>
+    <string name="speedup_show_userapp">只显示用户进程</string>
+    <string name="space_phone">手机内置空间</string>
+    <string name="space_sdcard">外置存储空间</string>
+    <string name="filetype_all">全部</string>
+    <string name="filetype_txt">文档</string>
+    <string name="filetype_image">图像</string>
+    <string name="filetype_audio">音频</string>
+    <string name="filetype_video">视频</string>
+    <string name="filetype_zip">压缩包</string>
+    <string name="filetype_apk">程序包</string>
+    <string name="title_activity_showapp">ShowappActivity</string>
+    <string name="title_activity_phonemgr">PhonemgrActivity</string>
+    <string name="title_activity_telmgr">TelmgrActivity</string>
+    <string name="title_activity_telshow">TelshowActivity</string>
+    <string name="title_activity_filemgr">FilemgrActivity</string>
+<string
+    name="title_activity_filemgr_show">FilemgrShowActivity</string>
+    <string name="title_activity_kuaidi">KuaidiActivity</string>
+    <string name="title_activity_clear">ClearActivity</string>
+</resources>

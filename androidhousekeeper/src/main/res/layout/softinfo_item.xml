@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:layout_width="26dp"
+        android:layout_height="16dp"
+        android:id="@+id/cb_checkbox"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv_applog"
+        android:layout_toRightOf="@id/cb_checkbox"
+        android:layout_centerInParent="true"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_appname"
+        android:layout_toRightOf="@id/iv_applog"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_appversions"
+        android:layout_toRightOf="@id/iv_applog"
+        android:layout_below="@id/tv_appname"
+        android:singleLine="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_appdao"
+        android:layout_toRightOf="@id/iv_applog"
+        android:layout_below="@id/tv_appversions"
+        android:singleLine="true"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"/>
+</RelativeLayout>

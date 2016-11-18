@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 手机检测 -->
+    <dimen name="phonemgr_height">160dp</dimen>
+    <dimen name="phonemgr_battery_height">100dp</dimen>
+</resources>

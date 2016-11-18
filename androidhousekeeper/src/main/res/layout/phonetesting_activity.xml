@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#013c57">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ll_return"
+            android:paddingLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_homeasup_default1"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="手机检测"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#fff"/>
+
+
+
+    </RelativeLayout>
+
+
+    <!--body 布局-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bott_linerstyle">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="4"
+            android:paddingLeft="20dp">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/progress_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_info"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical">
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="60dp"
+                android:background="#f2ba23"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_text"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="#329331"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 设备布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="@drawable/bott_linerstyle">
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg1"
+                    android:background="@drawable/notification_information_progress_green"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img1"
+                    android:background="@drawable/setting_info_icon_version"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_sbname"
+                    android:layout_toRightOf="@id/iv_bg1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_bbname"
+                    android:layout_below="@id/tv_sbname"
+                    android:layout_toRightOf="@id/iv_bg1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+            </RelativeLayout>
+
+            <!-- 主板布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bott_linerstyle">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg6"
+                    android:background="@drawable/notification_information_progress_yellow"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img6"
+                    android:background="@drawable/setting_info_icon_mainboard"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_mainboard"
+                    android:layout_toRightOf="@id/iv_bg6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_display"
+                    android:layout_below="@id/tv_mainboard"
+                    android:layout_toRightOf="@id/iv_bg6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+
+            </RelativeLayout>
+
+
+
+            <!-- 内置内存布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bott_linerstyle">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg8"
+                    android:background="@drawable/notification_information_progress_red"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img8"
+                    android:background="@drawable/setting_info_icon_waicun"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="11dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_neicunsum"
+                    android:layout_toRightOf="@id/iv_bg8"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_shengyucun"
+                    android:layout_below="@id/tv_neicunsum"
+                    android:layout_toRightOf="@id/iv_bg8"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+            </RelativeLayout>
+
+            <!-- 内存布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bott_linerstyle">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg2"
+                    android:background="@drawable/notification_information_progress_red"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img2"
+                    android:background="@drawable/setting_info_icon_space"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="11dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ncall"
+                    android:layout_toRightOf="@id/iv_bg2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ncsy"
+                    android:layout_below="@id/tv_ncall"
+                    android:layout_toRightOf="@id/iv_bg2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+            </RelativeLayout>
+
+            <!-- cup布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bott_linerstyle">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg3"
+                    android:background="@drawable/notification_information_progress_yellow"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img3"
+                    android:background="@drawable/setting_info_icon_cpu"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="11dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cpuname"
+                    android:layout_toRightOf="@id/iv_bg3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_cpunumber"
+                    android:layout_below="@id/tv_cpuname"
+                    android:layout_toRightOf="@id/iv_bg3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+            </RelativeLayout>
+
+            <!-- 分辨率布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bott_linerstyle">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg4"
+                    android:background="@drawable/notification_information_progress_green"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img4"
+                    android:background="@drawable/setting_info_icon_camera"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="11dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_phonefbl"
+                    android:layout_toRightOf="@id/iv_bg4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_xjfbl"
+                    android:layout_below="@id/tv_phonefbl"
+                    android:layout_toRightOf="@id/iv_bg4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+
+            </RelativeLayout>
+
+            <!-- 版本布局 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bott_linerstyle">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="52dp"
+                    android:id="@+id/iv_bg5"
+                    android:background="@drawable/notification_information_progress_red"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_img5"
+                    android:background="@drawable/setting_info_icon_root"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="11dp"
+                    android:padding="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_jdbb"
+                    android:layout_toRightOf="@id/iv_bg5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_root"
+                    android:layout_below="@id/tv_jdbb"
+                    android:layout_toRightOf="@id/iv_bg5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".StartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#013c57">
+
+        <ImageView
+            android:id="@+id/iv_fanhui"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_homeasup_default1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="全部文件"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"/>
+
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/bott_linerstyle">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_filenumsum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:text="文件数量："/>
+
+            <TextView
+                android:id="@+id/tv_sumnum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/tv_filenumsum"
+                android:paddingLeft="6dp"
+                android:textSize="22dp"
+                android:textColor="#009bcd"
+                android:textStyle="italic"
+                android:text="1622个"/>
+
+            <TextView
+                android:id="@+id/tv_filenum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/tv_sumnum"
+                android:paddingTop="4dp"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:text="占用空间："/>
+
+            <TextView
+                android:id="@+id/tv_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/tv_filenum"
+                android:paddingLeft="6dp"
+                android:textSize="22dp"
+                android:textColor="#009bcd"
+                android:textStyle="italic"
+                android:text="878.01M"/>
+
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-60dp"
+        android:padding="0dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="45dp"
+            android:checked="false"
+            android:button="@null"
+            android:background="@drawable/checkbox_del"
+            android:id="@+id/cb_cball"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:padding="10dp"
+            android:id="@+id/btn_del"
+            android:paddingRight="10dp"
+            android:background="@drawable/shap_btn"
+            android:text="删除所选文件"
+            android:textSize="16dp"
+            android:textColor="#fff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+</LinearLayout>
